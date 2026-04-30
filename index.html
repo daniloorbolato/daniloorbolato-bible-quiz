@@ -493,7 +493,7 @@ Rules:
     ? `Pasta Google Drive ID: ${folderId}. Bíblia ${version}. Gere 10 perguntas sobre ${topicDesc}. Apenas JSON.`
     : `Google Drive folder: ${folderId}. ${version} Bible. Generate 10 questions about ${topicDesc}. JSON only.`;
 
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
+  const res = await fetch('https://claude-api.daniloorbolato.workers.dev/v1/messages', {
     method:'POST',
     headers:{'Content-Type':'application/json'},
     body: JSON.stringify({
