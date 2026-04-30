@@ -67,8 +67,6 @@
   .card::after { content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),var(--gold-light),var(--gold),transparent); }
   .screen { display: none; width: 100%; }
   .screen.active { display: block; }
-
-  /* TYPOGRAPHY */
   .cross-ornament { text-align:center;font-size:26px;color:var(--gold);margin-bottom:8px;letter-spacing:12px; }
   .title-main { font-family:'Cinzel',serif;font-size:30px;font-weight:700;color:var(--ink);text-align:center;letter-spacing:3px;line-height:1.2;margin-bottom:4px; }
   .title-sub { font-family:'Cinzel',serif;font-size:12px;color:var(--gold);text-align:center;letter-spacing:5px;margin-bottom:24px; }
@@ -77,8 +75,6 @@
   .divider-icon { color:var(--gold);font-size:13px; }
   .section-label { font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;color:var(--gold);text-align:center;margin-bottom:12px; }
   .welcome-verse { font-size:15px;color:var(--ink-light);text-align:center;line-height:1.8;font-style:italic;margin-bottom:22px; }
-
-  /* LANGUAGE BUTTONS */
   .lang-buttons { display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px; }
   .lang-btn { padding:14px 10px;border:1.5px solid var(--gold);background:transparent;border-radius:3px;cursor:pointer;font-family:'Cinzel',serif;position:relative;overflow:hidden;transition:all 0.2s; }
   .lang-btn::before { content:'';position:absolute;inset:0;background:var(--gold);transform:scaleY(0);transform-origin:bottom;transition:transform 0.2s;z-index:0; }
@@ -88,8 +84,6 @@
   .lang-btn .lv { display:block;font-size:10px;color:var(--gold);letter-spacing:2px;margin-top:2px;transition:color 0.2s; }
   .lang-btn:hover .ln,.lang-btn.selected .ln { color:var(--parchment); }
   .lang-btn:hover .lv,.lang-btn.selected .lv { color:rgba(245,237,214,0.75); }
-
-  /* TOPIC GRID */
   .topic-grid { display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px; }
   .topic-btn { padding:12px 8px;border:1px solid rgba(28,18,8,0.2);background:var(--vellum);border-radius:3px;cursor:pointer;font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;color:var(--ink-light);text-align:center;transition:all 0.2s;position:relative;overflow:hidden; }
   .topic-btn::before { content:'';position:absolute;inset:0;background:var(--ink);transform:scaleY(0);transform-origin:bottom;transition:transform 0.2s;z-index:0; }
@@ -98,17 +92,13 @@
   .t-icon { display:block;font-size:18px;margin-bottom:3px; }
   .t-label { display:block;transition:color 0.2s; }
   .topic-btn:hover .t-label,.topic-btn.selected .t-label { color:var(--gold-pale); }
-
   .custom-wrap { display:none;margin-bottom:10px; }
   .custom-input { width:100%;padding:12px 14px;border:1px solid rgba(28,18,8,0.2);border-bottom:2px solid var(--gold);background:var(--vellum);border-radius:3px 3px 0 0;font-family:'Crimson Pro',serif;font-size:15px;color:var(--ink);outline:none; }
   .custom-input::placeholder { color:rgba(61,43,16,0.4);font-style:italic; }
   .topic-hint { font-size:13px;color:var(--ink-light);font-style:italic;text-align:center;margin-bottom:14px;min-height:18px; }
-
   .start-btn { width:100%;padding:17px;background:var(--ink);color:var(--gold-pale);border:none;border-radius:3px;font-family:'Cinzel',serif;font-size:12px;font-weight:600;letter-spacing:4px;cursor:pointer;transition:all 0.25s; }
   .start-btn:hover:not(:disabled) { background:var(--ink-light);box-shadow:0 4px 20px rgba(0,0,0,0.4);transform:translateY(-1px); }
   .start-btn:disabled { opacity:0.38;cursor:not-allowed;transform:none;box-shadow:none; }
-
-  /* LOADING */
   .loading-center { text-align:center;padding:20px 0; }
   .scroll-icon { font-size:46px;display:block;margin:0 auto 18px;animation:float 2s ease-in-out infinite; }
   @keyframes float { 0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)} }
@@ -117,8 +107,6 @@
   .progress-track { height:3px;background:var(--parchment-dark);border-radius:2px;overflow:hidden;margin-bottom:10px; }
   .progress-fill { height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));border-radius:2px;width:0%;transition:width 0.5s ease; }
   .loading-step { font-size:11px;color:var(--gold);font-family:'Cinzel',serif;letter-spacing:2px; }
-
-  /* QUESTION */
   .quiz-header { display:flex;align-items:center;justify-content:space-between;margin-bottom:20px; }
   .q-counter { font-family:'Cinzel',serif;font-size:11px;letter-spacing:3px;color:var(--gold); }
   .q-dots { display:flex;gap:5px; }
@@ -128,7 +116,6 @@
   .q-badge { font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:var(--crimson);border:1px solid var(--crimson);padding:3px 8px;border-radius:2px; }
   .verse-ref { font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;color:var(--gold);margin-bottom:14px;display:block; }
   .question-text { font-size:17px;color:var(--ink);line-height:1.7;margin-bottom:20px;font-style:italic; }
-
   .options-list { display:flex;flex-direction:column;gap:9px;margin-bottom:18px; }
   .opt { padding:13px 16px;border:1px solid rgba(28,18,8,0.2);background:var(--vellum);border-radius:3px;cursor:pointer;font-family:'Crimson Pro',serif;font-size:15px;color:var(--ink);text-align:left;display:flex;align-items:center;gap:12px;transition:all 0.2s;position:relative;overflow:hidden; }
   .opt::before { content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold);transform:scaleY(0);transition:transform 0.2s; }
@@ -140,14 +127,12 @@
   .opt.wrong { border-color:var(--crimson);background:rgba(139,26,26,0.06);border-left:3px solid var(--crimson); }
   .opt.wrong .opt-letter { color:var(--crimson); }
   .opt:disabled { cursor:default; }
-
   .tf-btns { display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px; }
   .tf-btn { padding:18px;border:1.5px solid rgba(28,18,8,0.2);background:var(--vellum);border-radius:3px;cursor:pointer;font-family:'Cinzel',serif;font-size:12px;letter-spacing:3px;color:var(--ink);transition:all 0.2s;text-align:center; }
   .tf-btn:hover:not(:disabled) { border-color:var(--gold);background:rgba(212,160,23,0.06); }
   .tf-btn.correct { border-color:var(--sage);background:rgba(74,103,65,0.08);color:var(--sage); }
   .tf-btn.wrong { border-color:var(--crimson);background:rgba(139,26,26,0.06);color:var(--crimson); }
   .tf-btn:disabled { cursor:default; }
-
   .fill-area { margin-bottom:18px; }
   .fill-input { width:100%;padding:13px 14px;border:1px solid rgba(28,18,8,0.2);border-bottom:2px solid var(--gold);background:var(--vellum);border-radius:3px 3px 0 0;font-family:'Crimson Pro',serif;font-size:16px;color:var(--ink);outline:none; }
   .fill-input.correct { border-bottom-color:var(--sage);background:rgba(74,103,65,0.05); }
@@ -155,7 +140,6 @@
   .fill-sub { margin-top:9px;padding:11px 24px;background:var(--ink);color:var(--gold-pale);border:none;border-radius:3px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;cursor:pointer;transition:all 0.2s; }
   .fill-sub:hover:not(:disabled) { background:var(--ink-light); }
   .fill-sub:disabled { opacity:0.4;cursor:default; }
-
   .feedback-box { margin-top:14px;padding:15px 16px;border-radius:3px;border-left:3px solid;display:none;animation:fadeIn 0.3s ease; }
   .feedback-box.show { display:block; }
   .feedback-box.cf { background:rgba(74,103,65,0.08);border-left-color:var(--sage); }
@@ -169,8 +153,6 @@
   .next-btn.show { display:block;animation:fadeIn 0.3s ease; }
   .next-btn:hover { background:var(--gold);color:var(--parchment); }
   @keyframes fadeIn { from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)} }
-
-  /* RESULTS */
   .score-circle { width:106px;height:106px;border-radius:50%;border:2px solid var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:18px auto 14px;background:linear-gradient(135deg,rgba(212,160,23,0.1),transparent);box-shadow:0 0 28px rgba(184,134,11,0.2); }
   .score-num { font-family:'Cinzel',serif;font-size:36px;font-weight:700;color:var(--ink);line-height:1; }
   .score-of { font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;color:var(--gold); }
@@ -187,16 +169,10 @@
   .r-expl { font-size:13px;color:var(--ink-light);line-height:1.6;margin-left:22px;padding:7px 11px;background:rgba(28,18,8,0.04);border-radius:2px;border-left:2px solid rgba(184,134,11,0.4); }
   .again-btn { margin-top:22px;width:100%;padding:17px;background:var(--ink);color:var(--gold-pale);border:none;border-radius:3px;font-family:'Cinzel',serif;font-size:11px;font-weight:600;letter-spacing:4px;cursor:pointer;transition:all 0.25s; }
   .again-btn:hover { background:var(--ink-light);transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,0,0,0.3); }
-
   .err-box { background:rgba(139,26,26,0.08);border:1px solid rgba(139,26,26,0.3);border-radius:3px;padding:18px;text-align:center;margin:12px 0; }
   .err-box p { color:var(--crimson);font-size:14px;line-height:1.6; }
   .err-box button { margin-top:12px;padding:9px 22px;background:var(--crimson);color:white;border:none;border-radius:3px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;cursor:pointer; }
-
-  @media(max-width:480px) {
-    .card { padding:26px 16px; }
-    .title-main { font-size:26px; }
-    .question-text { font-size:16px; }
-  }
+  @media(max-width:480px) { .card{padding:26px 16px;} .title-main{font-size:26px;} .question-text{font-size:16px;} }
 </style>
 </head>
 <body>
@@ -210,7 +186,6 @@
     <div class="title-sub" id="t-appSub"></div>
     <div class="divider"><div class="divider-line"></div><div class="divider-icon">✦</div><div class="divider-line"></div></div>
     <p class="welcome-verse" id="t-verse"></p>
-
     <p class="section-label" id="t-langLabel"></p>
     <div class="lang-buttons">
       <button class="lang-btn" id="btn-en" onclick="selectLang('en')">
@@ -220,9 +195,7 @@
         <span class="ln">PORTUGUÊS</span><span class="lv">NVI</span>
       </button>
     </div>
-
     <div class="divider"><div class="divider-line"></div><div class="divider-icon">✦</div><div class="divider-line"></div></div>
-
     <p class="section-label" id="t-topicLabel"></p>
     <div class="topic-grid">
       <button class="topic-btn" id="tp-book" onclick="selectTopic('book')">
@@ -241,12 +214,11 @@
         <span class="t-icon">✍</span><span class="t-label" id="t-custom"></span>
       </button>
     </div>
-
     <div class="custom-wrap" id="custom-wrap">
       <input class="custom-input" id="custom-input" type="text" maxlength="80">
     </div>
     <p class="topic-hint" id="topic-hint"></p>
-    <button class="start-btn" id="start-btn" disabled onclick="startQuiz()" id="t-startBtn"></button>
+    <button class="start-btn" id="start-btn" disabled onclick="startQuiz()"></button>
   </div>
 
   <!-- LOADING -->
@@ -305,19 +277,20 @@
 </div>
 </div>
 <script>
+const WORKER_URL = 'https://claude-api.daniloorbolato.workers.dev';
+
 const LANG = {
   en: {
     appTitle:'BIBLE QUIZ', appSub:'WORD OF GOD',
     verse:'"Thy word is a lamp unto my feet, and a light unto my path."<br><em style="font-size:13px;letter-spacing:1px">— Psalm 119:105</em>',
-    langLabel:'CHOOSE YOUR LANGUAGE',
-    topicLabel:'CHOOSE A TOPIC',
+    langLabel:'CHOOSE YOUR LANGUAGE', topicLabel:'CHOOSE A TOPIC',
     book:'BOOK', chapter:'CHAPTER', doctrine:'DOCTRINE', person:'PERSON', custom:'FREE SUBJECT',
     hints:{ book:'e.g. Genesis, John, Psalms, Revelation...', chapter:'e.g. John 3, Psalm 23, Romans 8...', doctrine:'e.g. Salvation, Grace, Faith, The Trinity...', person:'e.g. Moses, David, Paul, Mary...', custom:'' },
     placeholder:'e.g. The Exodus, Grace, Solomon\'s wisdom...',
     startBtn:'BEGIN THE QUIZ',
     loadTitle:'SEARCHING THE SCRIPTURES',
     loadVerse:'"Search the scriptures; for in them ye think ye have eternal life..." — John 5:39',
-    loadSteps:['OPENING THE WORD...','SEARCHING THE SCRIPTURES...','CONSULTING THE SACRED TEXT...','PREPARING YOUR QUESTIONS...','ALMOST READY...'],
+    loadSteps:['OPENING THE WORD...','FETCHING THE SCRIPTURES...','CONSULTING THE SACRED TEXT...','PREPARING YOUR QUESTIONS...','ALMOST READY...'],
     confirmBtn:'CONFIRM',
     typeLabels:{ multiple_choice:'MULTIPLE CHOICE', true_false:'TRUE OR FALSE', fill_blank:'FILL IN THE BLANK' },
     trueBtn:'TRUE', falseBtn:'FALSE',
@@ -329,15 +302,13 @@ const LANG = {
     review:'REVIEW ALL ANSWERS', again:'PLAY AGAIN',
     fillPh:'Type your answer...',
     scoreMsgs:[[10,10,'"Well done, good and faithful servant!" — Matthew 25:21'],[8,9,'"You have searched me and known me." — Psalm 139:1'],[6,7,'"Blessed are those who hunger and thirst for righteousness." — Matthew 5:6'],[4,5,'"Study to show yourself approved unto God." — 2 Timothy 2:15'],[0,3,'"Open my eyes, that I may see wondrous things from Your law." — Psalm 119:18']],
-    trueLabel:'True', falseLabel:'False',
     errMsg:'Could not load Bible content. Check your connection and try again.',
     errDismiss:'DISMISS'
   },
   pt: {
     appTitle:'QUIZ BÍBLICO', appSub:'A PALAVRA DE DEUS',
     verse:'"A tua palavra é lâmpada para os meus pés e luz para o meu caminho."<br><em style="font-size:13px;letter-spacing:1px">— Salmo 119:105</em>',
-    langLabel:'ESCOLHA O IDIOMA',
-    topicLabel:'ESCOLHA UM TEMA',
+    langLabel:'ESCOLHA O IDIOMA', topicLabel:'ESCOLHA UM TEMA',
     book:'LIVRO', chapter:'CAPÍTULO', doctrine:'DOUTRINA', person:'PESSOA', custom:'ASSUNTO LIVRE',
     hints:{ book:'Ex: Gênesis, João, Salmos, Apocalipse...', chapter:'Ex: João 3, Salmo 23, Romanos 8...', doctrine:'Ex: Salvação, Graça, Fé, A Trindade...', person:'Ex: Moisés, Davi, Paulo, Maria...', custom:'' },
     placeholder:'Ex: O Êxodo, Graça, A sabedoria de Salomão...',
@@ -356,39 +327,35 @@ const LANG = {
     review:'REVISÃO DAS RESPOSTAS', again:'JOGAR NOVAMENTE',
     fillPh:'Digite sua resposta...',
     scoreMsgs:[[10,10,'"Muito bem, servo bom e fiel!" — Mateus 25:21'],[8,9,'"Tu me sondaste e me conheces." — Salmo 139:1'],[6,7,'"Felizes os que têm fome e sede de justiça." — Mateus 5:6'],[4,5,'"Procura apresentar-te a Deus aprovado." — 2 Timóteo 2:15'],[0,3,'"Abre os meus olhos para ver as maravilhas da tua lei." — Salmo 119:18']],
-    trueLabel:'Verdadeiro', falseLabel:'Falso',
     errMsg:'Não foi possível carregar o conteúdo bíblico. Verifique sua conexão e tente novamente.',
     errDismiss:'FECHAR'
   }
 };
 
-const FOLDERS = { en:'17Ca60GotDWqJ1UZZ7hYPlBDK4ZnES_5u', pt:'1-S9rTaidFHO_HkuWpPvBtVR59WM82L6j' };
-const VERSIONS = { en:'NKJV', pt:'NVI' };
-
 let lang = 'en', topicType = null, questions = [], curQ = 0, score = 0, answers = [];
 
-function tr(key) { return LANG[lang][key]; }
+function L() { return LANG[lang]; }
 
 function applyUI() {
-  const L = LANG[lang];
+  const l = L();
   document.getElementById('html-root').lang = lang;
-  document.getElementById('t-appTitle').textContent = L.appTitle;
-  document.getElementById('t-appSub').textContent = L.appSub;
-  document.getElementById('t-verse').innerHTML = L.verse;
-  document.getElementById('t-langLabel').textContent = L.langLabel;
-  document.getElementById('t-topicLabel').textContent = L.topicLabel;
-  document.getElementById('t-book').textContent = L.book;
-  document.getElementById('t-chapter').textContent = L.chapter;
-  document.getElementById('t-doctrine').textContent = L.doctrine;
-  document.getElementById('t-person').textContent = L.person;
-  document.getElementById('t-custom').textContent = L.custom;
-  document.getElementById('custom-input').placeholder = L.placeholder;
-  document.getElementById('start-btn').textContent = L.startBtn;
-  document.getElementById('t-complete').textContent = L.complete;
-  document.getElementById('t-ofTen').textContent = L.ofTen;
-  document.getElementById('t-review').textContent = L.review;
-  document.getElementById('t-again').textContent = L.again;
-  if (topicType) document.getElementById('topic-hint').textContent = L.hints[topicType] || '';
+  document.getElementById('t-appTitle').textContent = l.appTitle;
+  document.getElementById('t-appSub').textContent = l.appSub;
+  document.getElementById('t-verse').innerHTML = l.verse;
+  document.getElementById('t-langLabel').textContent = l.langLabel;
+  document.getElementById('t-topicLabel').textContent = l.topicLabel;
+  document.getElementById('t-book').textContent = l.book;
+  document.getElementById('t-chapter').textContent = l.chapter;
+  document.getElementById('t-doctrine').textContent = l.doctrine;
+  document.getElementById('t-person').textContent = l.person;
+  document.getElementById('t-custom').textContent = l.custom;
+  document.getElementById('custom-input').placeholder = l.placeholder;
+  document.getElementById('start-btn').textContent = l.startBtn;
+  document.getElementById('t-complete').textContent = l.complete;
+  document.getElementById('t-ofTen').textContent = l.ofTen;
+  document.getElementById('t-review').textContent = l.review;
+  document.getElementById('t-again').textContent = l.again;
+  if (topicType) document.getElementById('topic-hint').textContent = l.hints[topicType] || '';
 }
 
 function selectLang(l) {
@@ -403,10 +370,9 @@ function selectTopic(type) {
   topicType = type;
   document.querySelectorAll('.topic-btn').forEach(b => b.classList.remove('selected'));
   document.getElementById('tp-' + type).classList.add('selected');
-  const cw = document.getElementById('custom-wrap');
-  cw.style.display = type === 'custom' ? 'block' : 'none';
+  document.getElementById('custom-wrap').style.display = type === 'custom' ? 'block' : 'none';
   if (type === 'custom') document.getElementById('custom-input').focus();
-  document.getElementById('topic-hint').textContent = LANG[lang].hints[type] || '';
+  document.getElementById('topic-hint').textContent = L().hints[type] || '';
   checkStart();
 }
 
@@ -421,21 +387,19 @@ function showScreen(id) {
 }
 
 async function startQuiz() {
-  const L = LANG[lang];
+  const l = L();
   showScreen('loading');
-  document.getElementById('t-loadTitle').textContent = L.loadTitle;
-  document.getElementById('t-loadVerse').textContent = L.loadVerse;
+  document.getElementById('t-loadTitle').textContent = l.loadTitle;
+  document.getElementById('t-loadVerse').textContent = l.loadVerse;
   document.getElementById('prog').style.width = '0%';
-
   const pcts = [15,40,65,85,95];
   let si = 0;
   const iv = setInterval(() => {
-    if (si < L.loadSteps.length) {
+    if (si < l.loadSteps.length) {
       document.getElementById('prog').style.width = pcts[si] + '%';
-      document.getElementById('t-loadStep').textContent = L.loadSteps[si++];
+      document.getElementById('t-loadStep').textContent = l.loadSteps[si++];
     }
   }, 900);
-
   try {
     questions = await fetchQuestions();
     clearInterval(iv);
@@ -448,202 +412,161 @@ async function startQuiz() {
     const old = document.getElementById('quiz-err');
     if (old) old.remove();
     document.getElementById('start-btn').insertAdjacentHTML('afterend',
-      `<div class="err-box" id="quiz-err"><p>${L.errMsg}<br><small style="color:rgba(139,26,26,0.55)">${e.message}</small></p><button onclick="document.getElementById('quiz-err').remove()">${L.errDismiss}</button></div>`);
+      `<div class="err-box" id="quiz-err"><p>${l.errMsg}<br><small style="color:rgba(139,26,26,0.55)">${e.message}</small></p><button onclick="document.getElementById('quiz-err').remove()">${l.errDismiss}</button></div>`);
   }
 }
 
 async function fetchQuestions() {
-  const L = LANG[lang];
-  const folderId = FOLDERS[lang];
-  const version = VERSIONS[lang];
-  const topicLabel = topicType === 'custom'
+  const topicValue = topicType === 'custom'
     ? document.getElementById('custom-input').value.trim()
     : document.getElementById('t-' + topicType).textContent.trim();
 
-  const topicDesc = topicType === 'custom'
-    ? `subject: "${topicLabel}"`
-    : `${topicType}: "${topicLabel}"`;
-
-  const sys = `You are a Bible quiz generator with Google Drive MCP access.
-Steps:
-1. List files in Google Drive folder ID: ${folderId}
-2. Find the ${version} Bible markdown file
-3. Read content — focus on sections related to ${topicDesc}
-4. Return ONLY a raw JSON array of exactly 10 questions. No markdown, no explanation.
-
-Each question:
-{
-  "type": "multiple_choice"|"true_false"|"fill_blank",
-  "question": "...",
-  "verse_ref": "Book Chapter:Verse",
-  "options": ["A","B","C","D"],
-  "correct": "exact option string OR boolean OR fill word/phrase",
-  "explanation": "2-3 sentence biblical context"
-}
-
-Rules:
-- 5 multiple_choice, 3 true_false, 2 fill_blank
-- All 10 questions focused on: ${topicDesc}
-- true_false "correct" = boolean true/false
-- multiple_choice "correct" must exactly match one option
-- Language: ${lang==='pt'?'Brazilian Portuguese':'English'}
-- Translation: ${version}`;
-
-  const msg = lang==='pt'
-    ? `Pasta Google Drive ID: ${folderId}. Bíblia ${version}. Gere 10 perguntas sobre ${topicDesc}. Apenas JSON.`
-    : `Google Drive folder: ${folderId}. ${version} Bible. Generate 10 questions about ${topicDesc}. JSON only.`;
-
-  const res = await fetch('https://claude-api.daniloorbolato.workers.dev/v1/messages', {
-    method:'POST',
-    headers:{'Content-Type':'application/json'},
-    body: JSON.stringify({
-      model:'claude-sonnet-4-20250514',
-      max_tokens:4000,
-      system:sys,
-      messages:[{role:'user',content:msg}],
-      mcp_servers:[{type:'url',url:'https://drivemcp.googleapis.com/mcp/v1',name:'google-drive'}]
-    })
+  const res = await fetch(WORKER_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ lang, topicType, topicValue })
   });
 
-  if (!res.ok) { const e=await res.json().catch(()=>({})); throw new Error(e.error?.message||`API ${res.status}`); }
+  if (!res.ok) {
+    const e = await res.json().catch(() => ({}));
+    throw new Error(e.error?.message || `Error ${res.status}`);
+  }
+
   const data = await res.json();
-  let raw = data.content.map(b=>b.type==='text'?b.text:'').join('');
-  raw = raw.replace(/```json|```/g,'').trim();
-  const s=raw.indexOf('['), e=raw.lastIndexOf(']');
-  if(s<0||e<0) throw new Error('No JSON array found');
-  const parsed = JSON.parse(raw.slice(s,e+1));
-  if(!Array.isArray(parsed)||parsed.length<5) throw new Error('Invalid question set');
-  return parsed.slice(0,10);
+  if (data.error) throw new Error(data.error.message);
+
+  let raw = data.content.map(b => b.type === 'text' ? b.text : '').join('');
+  raw = raw.replace(/```json|```/g, '').trim();
+  const s = raw.indexOf('['), e = raw.lastIndexOf(']');
+  if (s < 0 || e < 0) throw new Error('No questions found in response');
+  const parsed = JSON.parse(raw.slice(s, e + 1));
+  if (!Array.isArray(parsed) || parsed.length < 5) throw new Error('Invalid question set returned');
+  return parsed.slice(0, 10);
 }
 
 function buildDots() {
-  const c = document.getElementById('q-dots'); c.innerHTML='';
-  questions.forEach((_,i)=>{const d=document.createElement('div');d.className='dot'+(i<curQ?' answered':i===curQ?' current':'');c.appendChild(d);});
+  const c = document.getElementById('q-dots'); c.innerHTML = '';
+  questions.forEach((_,i) => { const d = document.createElement('div'); d.className = 'dot'+(i<curQ?' answered':i===curQ?' current':''); c.appendChild(d); });
 }
 
 function renderQ() {
-  const q = questions[curQ]; const L = LANG[lang];
-  document.getElementById('q-counter').textContent = L.qCounter(curQ+1, questions.length);
+  const q = questions[curQ]; const l = L();
+  document.getElementById('q-counter').textContent = l.qCounter(curQ+1, questions.length);
   buildDots();
-  document.getElementById('q-badge').textContent = L.typeLabels[q.type]||q.type;
-  document.getElementById('verse-ref').textContent = q.verse_ref||'';
+  document.getElementById('q-badge').textContent = l.typeLabels[q.type] || q.type;
+  document.getElementById('verse-ref').textContent = q.verse_ref || '';
   document.getElementById('q-text').textContent = q.question;
-  ['opts','tf-btns','fill-area'].forEach(id=>{
-    const el=document.getElementById(id);
-    el.style.display='none';
-    if(id==='opts') el.style.flexDirection='column';
-  });
-  document.getElementById('fb-box').className='feedback-box';
-  document.getElementById('next-btn').className='next-btn';
-
-  if(q.type==='multiple_choice'){
-    const ol=document.getElementById('opts'); ol.style.display='flex'; ol.innerHTML='';
-    ['A','B','C','D'].forEach((lt,i)=>{
-      if(!q.options||!q.options[i]) return;
-      const b=document.createElement('button'); b.className='opt';
-      b.innerHTML=`<span class="opt-letter">${lt}</span><span>${q.options[i]}</span>`;
-      b.onclick=()=>answerMC(q.options[i],b,q); ol.appendChild(b);
+  ['opts','tf-btns','fill-area'].forEach(id => { const el = document.getElementById(id); el.style.display = 'none'; });
+  document.getElementById('fb-box').className = 'feedback-box';
+  document.getElementById('next-btn').className = 'next-btn';
+  if (q.type === 'multiple_choice') {
+    const ol = document.getElementById('opts'); ol.style.display = 'flex'; ol.innerHTML = '';
+    ['A','B','C','D'].forEach((lt,i) => {
+      if (!q.options || !q.options[i]) return;
+      const b = document.createElement('button'); b.className = 'opt';
+      b.innerHTML = `<span class="opt-letter">${lt}</span><span>${q.options[i]}</span>`;
+      b.onclick = () => answerMC(q.options[i], b, q); ol.appendChild(b);
     });
-  } else if(q.type==='true_false'){
-    const tb=document.getElementById('tf-btns'); tb.style.display='grid';
-    const tt=document.getElementById('tf-t'), tf=document.getElementById('tf-f');
-    tt.className='tf-btn'; tf.className='tf-btn'; tt.disabled=false; tf.disabled=false;
-    tt.textContent=L.trueBtn; tf.textContent=L.falseBtn;
+  } else if (q.type === 'true_false') {
+    document.getElementById('tf-btns').style.display = 'grid';
+    const tt = document.getElementById('tf-t'), tf = document.getElementById('tf-f');
+    tt.className = 'tf-btn'; tf.className = 'tf-btn'; tt.disabled = false; tf.disabled = false;
+    tt.textContent = l.trueBtn; tf.textContent = l.falseBtn;
   } else {
-    const fa=document.getElementById('fill-area'); fa.style.display='block';
-    const fi=document.getElementById('fill-in'); fi.value=''; fi.className='fill-input'; fi.disabled=false; fi.placeholder=L.fillPh;
-    const fs=document.getElementById('fill-sub'); fs.textContent=L.confirmBtn; fs.disabled=false;
+    document.getElementById('fill-area').style.display = 'block';
+    const fi = document.getElementById('fill-in'); fi.value = ''; fi.className = 'fill-input'; fi.disabled = false; fi.placeholder = l.fillPh;
+    const fs = document.getElementById('fill-sub'); fs.textContent = l.confirmBtn; fs.disabled = false;
   }
 }
 
-function answerMC(chosen,btn,q){
-  document.querySelectorAll('.opt').forEach(b=>b.disabled=true);
-  const ok=chosen===q.correct;
-  btn.classList.add(ok?'correct':'wrong');
-  if(!ok) document.querySelectorAll('.opt').forEach(b=>{ if(b.querySelector('span:last-child').textContent===q.correct) b.classList.add('correct'); });
-  record(ok,q,chosen);
+function answerMC(chosen, btn, q) {
+  document.querySelectorAll('.opt').forEach(b => b.disabled = true);
+  const ok = chosen === q.correct;
+  btn.classList.add(ok ? 'correct' : 'wrong');
+  if (!ok) document.querySelectorAll('.opt').forEach(b => { if (b.querySelector('span:last-child').textContent === q.correct) b.classList.add('correct'); });
+  record(ok, q, chosen);
 }
 
-function answerTF(chosen){
-  const q=questions[curQ]; const ok=chosen===q.correct;
-  const tt=document.getElementById('tf-t'), tf=document.getElementById('tf-f');
-  tt.disabled=true; tf.disabled=true;
-  (chosen?tt:tf).classList.add(ok?'correct':'wrong');
-  if(!ok)(q.correct?tt:tf).classList.add('correct');
-  record(ok,q,String(chosen));
+function answerTF(chosen) {
+  const q = questions[curQ]; const ok = chosen === q.correct;
+  const tt = document.getElementById('tf-t'), tf = document.getElementById('tf-f');
+  tt.disabled = true; tf.disabled = true;
+  (chosen ? tt : tf).classList.add(ok ? 'correct' : 'wrong');
+  if (!ok) (q.correct ? tt : tf).classList.add('correct');
+  record(ok, q, String(chosen));
 }
 
-function submitFill(){
-  const q=questions[curQ]; const val=document.getElementById('fill-in').value.trim();
-  if(!val) return;
-  const ok=val.toLowerCase().includes(String(q.correct).toLowerCase())||String(q.correct).toLowerCase().includes(val.toLowerCase());
-  document.getElementById('fill-in').className='fill-input '+(ok?'correct':'wrong');
-  document.getElementById('fill-in').disabled=true; document.getElementById('fill-sub').disabled=true;
-  record(ok,q,val);
+function submitFill() {
+  const q = questions[curQ]; const val = document.getElementById('fill-in').value.trim();
+  if (!val) return;
+  const ok = val.toLowerCase().includes(String(q.correct).toLowerCase()) || String(q.correct).toLowerCase().includes(val.toLowerCase());
+  document.getElementById('fill-in').className = 'fill-input ' + (ok ? 'correct' : 'wrong');
+  document.getElementById('fill-in').disabled = true; document.getElementById('fill-sub').disabled = true;
+  record(ok, q, val);
 }
 
-function correctStr(q){
-  if(typeof q.correct==='boolean') return q.correct?LANG[lang].trueBtn:LANG[lang].falseBtn;
+function correctStr(q) {
+  if (typeof q.correct === 'boolean') return q.correct ? L().trueBtn : L().falseBtn;
   return q.correct;
 }
 
-function record(ok,q,userAns){
-  if(ok) score++;
-  answers.push({q,ok,userAns});
-  const L=LANG[lang];
-  const fb=document.getElementById('fb-box');
-  fb.className='feedback-box show '+(ok?'cf':'wf');
-  document.getElementById('fb-result').textContent=ok?L.feedOk:L.feedWrong;
-  document.getElementById('fb-text').textContent=q.explanation||'';
-  document.getElementById('fb-answer').textContent=ok?'':`${L.correctAns}: ${correctStr(q)}`;
-  const nb=document.getElementById('next-btn');
-  nb.textContent=curQ===questions.length-1?L.seeResults:L.nextBtn;
-  nb.className='next-btn show';
+function record(ok, q, userAns) {
+  if (ok) score++;
+  answers.push({q, ok, userAns});
+  const l = L();
+  const fb = document.getElementById('fb-box');
+  fb.className = 'feedback-box show ' + (ok ? 'cf' : 'wf');
+  document.getElementById('fb-result').textContent = ok ? l.feedOk : l.feedWrong;
+  document.getElementById('fb-text').textContent = q.explanation || '';
+  document.getElementById('fb-answer').textContent = ok ? '' : `${l.correctAns}: ${correctStr(q)}`;
+  const nb = document.getElementById('next-btn');
+  nb.textContent = curQ === questions.length - 1 ? l.seeResults : l.nextBtn;
+  nb.className = 'next-btn show';
 }
 
-function nextQ(){
+function nextQ() {
   curQ++;
-  if(curQ>=questions.length) showResults();
+  if (curQ >= questions.length) showResults();
   else renderQ();
 }
 
-function showResults(){
-  const L=LANG[lang];
-  document.getElementById('sc-num').textContent=score;
-  document.getElementById('t-ofTen').textContent=L.ofTen;
-  const m=L.scoreMsgs.find(([a,b])=>score>=a&&score<=b);
-  document.getElementById('sc-msg').innerHTML=m?m[2]:'';
-  document.getElementById('t-complete').textContent=L.complete;
-  document.getElementById('t-review').textContent=L.review;
-  document.getElementById('t-again').textContent=L.again;
-  const rl=document.getElementById('r-list'); rl.innerHTML='';
-  answers.forEach((item,idx)=>{
-    const d=document.createElement('div'); d.className='r-item';
-    d.innerHTML=`
-      <div class="r-head"><span class="r-icon">${item.ok?'✦':'✗'}</span><span class="r-q">${idx+1}. ${item.q.question}</span></div>
-      ${!item.ok?`<div class="r-ans"><span class="wa">${L.yourAns}: ${item.userAns}</span><br><span class="ca">${L.correctAns}: ${correctStr(item.q)}</span></div>`:''}
-      <div class="r-expl">${item.q.explanation||''}</div>`;
+function showResults() {
+  const l = L();
+  document.getElementById('sc-num').textContent = score;
+  document.getElementById('t-ofTen').textContent = l.ofTen;
+  const m = l.scoreMsgs.find(([a,b]) => score >= a && score <= b);
+  document.getElementById('sc-msg').innerHTML = m ? m[2] : '';
+  document.getElementById('t-complete').textContent = l.complete;
+  document.getElementById('t-review').textContent = l.review;
+  document.getElementById('t-again').textContent = l.again;
+  const rl = document.getElementById('r-list'); rl.innerHTML = '';
+  answers.forEach((item, idx) => {
+    const d = document.createElement('div'); d.className = 'r-item';
+    d.innerHTML = `
+      <div class="r-head"><span class="r-icon">${item.ok ? '✦' : '✗'}</span><span class="r-q">${idx+1}. ${item.q.question}</span></div>
+      ${!item.ok ? `<div class="r-ans"><span class="wa">${l.yourAns}: ${item.userAns}</span><br><span class="ca">${l.correctAns}: ${correctStr(item.q)}</span></div>` : ''}
+      <div class="r-expl">${item.q.explanation || ''}</div>`;
     rl.appendChild(d);
   });
   showScreen('results');
 }
 
-function resetQuiz(){
-  questions=[]; curQ=0; score=0; answers=[]; topicType=null;
-  document.querySelectorAll('.topic-btn').forEach(b=>b.classList.remove('selected'));
-  document.getElementById('custom-wrap').style.display='none';
-  document.getElementById('custom-input').value='';
-  document.getElementById('topic-hint').textContent='';
-  document.getElementById('start-btn').disabled=true;
-  document.getElementById('prog').style.width='0%';
-  const e=document.getElementById('quiz-err'); if(e) e.remove();
+function resetQuiz() {
+  questions = []; curQ = 0; score = 0; answers = []; topicType = null;
+  document.querySelectorAll('.topic-btn').forEach(b => b.classList.remove('selected'));
+  document.getElementById('custom-wrap').style.display = 'none';
+  document.getElementById('custom-input').value = '';
+  document.getElementById('topic-hint').textContent = '';
+  document.getElementById('start-btn').disabled = true;
+  document.getElementById('prog').style.width = '0%';
+  const e = document.getElementById('quiz-err'); if (e) e.remove();
   showScreen('welcome');
 }
 
-document.addEventListener('DOMContentLoaded',()=>{
+document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('custom-input').addEventListener('input', checkStart);
-  document.getElementById('custom-input').addEventListener('keydown',e=>{ if(e.key==='Enter'&&!document.getElementById('start-btn').disabled) startQuiz(); });
-  document.getElementById('fill-in').addEventListener('keydown',e=>{ if(e.key==='Enter') submitFill(); });
+  document.getElementById('custom-input').addEventListener('keydown', e => { if (e.key === 'Enter' && !document.getElementById('start-btn').disabled) startQuiz(); });
+  document.getElementById('fill-in').addEventListener('keydown', e => { if (e.key === 'Enter') submitFill(); });
   applyUI();
 });
 </script>
